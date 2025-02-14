@@ -100,7 +100,7 @@ header .navbar-light .nav-item { margin: 0 10px; }
 header .navbar-light .nav-item .nav-link { color: var(--white); font-size: 16px; line-height: normal; position: relative; -webkit-transition: all 250ms ease-in-out 0s; -moz-transition: all 250ms ease-in-out 0s; -ms-transition: all 250ms ease-in-out 0s; -o-transition: all 250ms ease-in-out 0s; transition: all 250ms ease-in-out 0s; }
 header .navbar-light .navbar-nav .nav-link:before { content: ""; display: inline-block; position: absolute; bottom: -3px; left: 50%; margin-left: -3px; background: var(--iq-primary); height: 6px; width: 6px; border-radius: 90px; opacity: 0; -webkit-transition: all 250ms ease-in-out 0s; -moz-transition: all 250ms ease-in-out 0s; -ms-transition: all 250ms ease-in-out 0s; -o-transition: all 250ms ease-in-out 0s; transition: all 250ms ease-in-out 0s; }
 header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-item .nav-link.active { color: var(--iq-primary); }
-header .navbar-light .navbar-nav .nav-link:hover:before, .navbar-light .navbar-nav .nav-link:focus:before, .navbar-light .navbar-nav .nav-item .nav-link.active:before { opacity: 1; }
+header .navbar-light .navbar-nav .nav-link:hover:before, .navbar-light .navbar-nav .nav-link:focus:before, .navbar-light .navbar-nav .nav-item .nav-link.active:before { opacity: 0.2; }
 header .navbar-light .nav { position: relative; }
 header .navbar-light .nav:before { content: ""; position: absolute; top: 16px; left: 5px; height: 25px; width: 1px; display: inline-block; background: var(--iq-gray-border); }
 header .navbar-light .nav .button:hover, header .navbar-light .nav .button:focus { color: var(--iq-light); }
