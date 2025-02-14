@@ -56,34 +56,34 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto w-100 justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#wave">Home</a>
+                                    <a class="nav-link active" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#ico">Mission</a>
+                                    <a class="nav-link" href="#mission">Mission</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#product">Goals</a>
+                                    <a class="nav-link" href="#goals">Goals</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#token">Comic</a>
+                                    <a class="nav-link" href="#comic">Comic</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#road">Yt And Shop</a>
+                                    <a class="nav-link" href="#YtAndShop">Yt And Shop</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#team">P2E Game</a>
+                                    <a class="nav-link" href="#P2E">P2E Game</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-us">Tokenomics</a>
+                                    <a class="nav-link" href="#Tokenomics">Tokenomics</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-us">Roadmap</a>
+                                    <a class="nav-link" href="#road">Roadmap</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-us">Community</a>
+                                    <a class="nav-link" href="#community">Community</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-us">Team Members</a>
+                                    <a class="nav-link" href="#team">Team Members</a>
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +94,7 @@
     </header>
     <!-- Header END -->
 <!-- banner -->
-<div id="wave" class="iq-banner" style="position: relative; z-index: 1;">
+<div id="home" class="iq-banner" style="position: relative; z-index: 1;">
     <div class="banner-info">
         <div class="container">
             <div class="row">
@@ -172,6 +172,67 @@
     .texto-blanco {
         color: #fff !important; /* Esto forza el color blanco en todo momento */
     }
+
+    /* Banner con imagen de fondo */
+    .iq-banner {
+        position: relative;
+        padding: 11% 0 6%;
+        z-index: -1;
+        background: #141414; /* Fallback en caso de que no se cargue la imagen */
+        background-image: url('../capitanimages/banner2.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* Banner info encima de la imagen */
+    .banner-info {
+        position: relative;
+        z-index: 999;
+    }
+
+    /* Estilos adicionales para el banner de countdown, progreso, etc. */
+    .iq-countdown #countdown li span {
+        font-size: 44px;
+        line-height: normal;
+        font-weight: 700;
+        color: var(--white);
+    }
+
+    .iq-progress-bar {
+        background: var(--white) none repeat scroll 0 0;
+        box-shadow: 0 0 0;
+        height: 15px;
+        margin: 0 0 30px;
+        position: relative;
+        width: 100%;
+        border-radius: 90px;
+    }
+
+    .iq-progress-bar > span {
+        background: var(--iq-primary) none repeat scroll 0 0;
+        display: block;
+        height: 100%;
+        width: 0;
+        border-radius: 90px;
+    }
+
+    .iq-countdown #countdown li p {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 0;
+    }
+
+    .iq-banner .iq-countdown .list-inline li a {
+        color: var(--white);
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .iq-banner .iq-countdown .list-inline li a:hover {
+        color: var(--iq-primary);
+    }
 </style>
 
 
@@ -208,7 +269,7 @@
         <!-- What is Ico -->
         <!-- What is Ico END -->
         <!-- Our Mission -->
-        <section class="features-section" style="background-image: url('capitanimages/7926.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+        <section id="mission" class="features-section" style="background-image: url('capitanimages/7926.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
 
             <div class="container">
                 <div class="row">
@@ -237,7 +298,7 @@
         
         
 
-        <section class="core-goals-values-section" style="background-image: url('capitanimages/154750.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+        <section id="goals" class="core-goals-values-section" style="background-image: url('capitanimages/154750.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
             <div class="container">
                 <!-- Título de la sección -->
                 <div class="heading-title text-center mb-5">
@@ -414,7 +475,7 @@
         
         
 
-        <section class="features-section">
+        <section id="comic" class="features-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center position-relative">
@@ -477,7 +538,7 @@
         
         
 
-        <section id="iq-about" class="overview-block-ptb" style="margin-top: 80px;">
+        <section id="YtAndShop" class="overview-block-ptb" style="margin-top: 80px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
@@ -498,7 +559,7 @@
         </section>
         
         <!-- What is OVEX -->
-        <section id="ico" class="overview-block-ptb" style="padding-top: 100px; padding-bottom: 100px;">
+        <section  class="overview-block-ptb" style="padding-top: 100px; padding-bottom: 100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
@@ -516,7 +577,7 @@
         </section>
         
         
-        <section class="features-section">
+        <section id="P2E" class="features-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center position-relative">
@@ -552,7 +613,7 @@
         
 
 
-        <section class="core-goals-values-section" style="background-image: url('images/background.jpg'); background-size: cover; background-position: center; padding: 80px 0;">
+        <section id="Tokenomics"  class="core-goals-values-section" style="background-image: url('images/background.jpg'); background-size: cover; background-position: center; padding: 80px 0;">
             <div class="container">
                 <!-- Título de la sección -->
                 <div class="heading-title text-center mb-5">
@@ -689,7 +750,7 @@
         </section>
 
 <!-- Our Blog -->
-<section class="overview-block-ptb blog-style">
+<section id="community"  class="overview-block-ptb blog-style">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -879,7 +940,6 @@
                             <div class="heading-title">
                                 <small class="iq-font-green">Executive Team</small>
                                 <h2 class="title">Team Members</h2>
-                                <p>Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                             </div>
                         </div>
                     </div>
