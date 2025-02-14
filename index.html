@@ -94,14 +94,14 @@
     </header>
     <!-- Header END -->
 <!-- banner -->
-<div id="wave" class="iq-banner">
+<div id="wave" class="iq-banner" style="position: relative; z-index: 1;">
     <div class="banner-info">
         <div class="container">
             <div class="row">
                 <!-- Columna del texto principal -->
                 <div class="col-lg-7 align-self-center">
-                    <div class="banner-text text-left text-white">
-                        <h1 class="text-white iq-mb-20">
+                    <div class="banner-text text-left texto-blanco">
+                        <h1 class="texto-blanco iq-mb-20" id="titulo-banner">
                             Captain Doge
                             <b class="iq-font-yellow">Defender</b>
                             of The Doge Metaverse
@@ -115,19 +115,19 @@
                     <div class="row">
                         <!-- Fila 1 - Dos botones -->
                         <div class="col-6 col-md-3 mb-3">
-                            <a href="javascript:void(0)" class="button iq-mt-5 w-100" style="background-color: #f4e546; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center;">Buy On Uniswap</a>
+                            <a href="https://app.uniswap.org" class="btn btn-como w-100" style="background-color: #f4e546; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center; position: relative; z-index: 10;" target="_blank" rel="noopener noreferrer">Buy On Uniswap</a>
                         </div>
                         <div class="col-6 col-md-3 mb-3">
-                            <a href="javascript:void(0)" class="button iq-mt-5 w-100" style="background-color: #f4e546; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center;">Read Woofpaper VI</a>
+                            <a href="https://example.com/woofpaper" class="btn btn-como w-100" style="background-color: #f4e546; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center; position: relative; z-index: 10;" target="_blank" rel="noopener noreferrer">Read Woofpaper VI</a>
                         </div>
                     </div>
                     <div class="row">
                         <!-- Fila 2 - Dos botones -->
                         <div class="col-6 col-md-3 mb-3">
-                            <a href="javascript:void(0)" class="button iq-mt-5 w-100" style="background-color: #46bbf4; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center;">Open Telegram</a>
+                            <a href="https://t.me/CaptainDoge_BSC" class="btn btn-como w-100" style="background-color: #46bbf4; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center; position: relative; z-index: 10;" target="_blank" rel="noopener noreferrer">Open Telegram</a>
                         </div>
                         <div class="col-6 col-md-3 mb-3">
-                            <a href="javascript:void(0)" class="button iq-mt-5 w-100" style="background-color: #46bbf4; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center;">Open Discord</a>
+                            <a href="https://twitter.com/captaindoge_bsc" class="btn btn-como w-100" style="background-color: #46bbf4; border-radius: 30px; padding: 15px; font-size: 18px; text-align: center; position: relative; z-index: 10;" target="_blank" rel="noopener noreferrer">Open Twitter</a>
                         </div>
                     </div>
                 </div>
@@ -135,6 +135,45 @@
         </div>
     </div>
 </div>
+
+<!-- Estilos adicionales -->
+<style>
+    /* Clases para los botones */
+    .btn-como {
+        display: block; /* Asegura que los botones ocupen toda la columna */
+        cursor: pointer; /* Añade un puntero al pasar el ratón */
+        transition: transform 0.3s ease, font-weight 0.3s ease; /* Suaviza el efecto de zoom y peso de la fuente */
+        color: #fff !important; /* Mantiene el texto blanco en todo momento */
+    }
+
+    /* Revisión adicional: z-index en los botones */
+    .btn-como {
+        position: relative;
+        z-index: 10; /* Asegura que los botones estén sobre otros elementos */
+    }
+
+    /* Efecto Hover en los botones */
+    .btn-como:hover {
+        transform: scale(1.1); /* Zoom al hacer hover */
+        font-weight: 700; /* Hacer la letra más gruesa */
+    }
+
+    /* Efecto Hover en el título */
+    #titulo-banner {
+        transition: transform 0.3s ease, font-weight 0.3s ease;
+    }
+
+    #titulo-banner:hover {
+        transform: scale(1.1); /* Zoom al hacer hover */
+        font-weight: 700; /* Hacer la letra más gruesa */
+    }
+
+    /* Asegura que la letra se mantenga blanca */
+    .texto-blanco {
+        color: #fff !important; /* Esto forza el color blanco en todo momento */
+    }
+</style>
+
 
 
 <!-- banner -->
@@ -174,7 +213,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
-                        <img src="capitanimages/bannerscapdoge-04.png" class="img-fluid" alt="Imagen relacionada con la misión">
+                        <img src="capitanimages/bannerscapdoge2-12.png" class="img-fluid" alt="Imagen relacionada con la misión">
                     </div>
                     <div class="col-lg-6 align-self-center mt-5 mt-lg-0">
                         <!-- Contenedor con borde y redondeo -->
@@ -253,74 +292,125 @@
         
         
 
-        <section class="cta-buttons-section" style="position: relative; padding: 60px 0; background-color: #141414;">
+        <section class="cta-buttons-section" style="position: relative; padding: 60px 0; background: url('') no-repeat center center/cover;">
             <div class="container position-relative">
                 <!-- Título de la sección -->
-                <div class="heading-title text-center mb-5">
-                    <h2 class="text-white" style="color: black;">Our Core Services</h2>
-                    <p class="text-white" style="color: black;"></p>
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 36px; color: white;">Our Main Services</h2>
+                    <p style="font-family: 'Roboto', sans-serif; font-size: 18px; color: #aaa;">Explore the services that make us stand out.</p>
                 </div>
         
                 <!-- Contenedor de los botones -->
                 <div class="row justify-content-center">
                     <!-- Botón 1 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="cta-button-wrapper text-center" style="position: relative;">
-                            <!-- Número detrás del título -->
-                            <div class="cta-number bg-primary text-white rounded-circle mb-3" 
-                                 style="width: 80px; height: 80px; font-size: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; display: flex; justify-content: center; align-items: center;">
-                                1
-                            </div>
+                    <div class="col-md-3 mb-4 text-center">
+                        <div style="position: relative; background-image: url('https://via.placeholder.com/400'); background-size: cover; background-position: center; height: 250px; border-radius: 10px;">
                             <!-- Título encima del número -->
-                            <h3 class="text-white" style="position: relative; z-index: 1; font-size: 18px;">White Paper</h3>
-                            <a href="javascript:void(0)" class="btn btn-primary text-white py-2 px-4 rounded-3">Click Here</a>
+                            <h3 style="position: relative; z-index: 1; font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: 500; color: white;">White Paper</h3>
+                            <a href="javascript:void(0)" style="position: relative; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 16px; padding: 12px 30px; color: #fff; background-color: #007bff; border-radius: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-transform: uppercase; padding: 12px 30px; font-size: 16px;">Click Here</a>
                         </div>
                     </div>
         
                     <!-- Botón 2 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="cta-button-wrapper text-center" style="position: relative;">
-                            <!-- Número detrás del título -->
-                            <div class="cta-number bg-primary text-white rounded-circle mb-3" 
-                                 style="width: 80px; height: 80px; font-size: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; display: flex; justify-content: center; align-items: center;">
-                                2
-                            </div>
+                    <div class="col-md-3 mb-4 text-center">
+                        <div style="position: relative; background-image: url('https://via.placeholder.com/400'); background-size: cover; background-position: center; height: 250px; border-radius: 10px;">
                             <!-- Título encima del número -->
-                            <h3 class="text-white" style="position: relative; z-index: 1; font-size: 18px;">Ethscan Contract</h3>
-                            <a href="javascript:void(0)" class="btn btn-primary text-white py-2 px-4 rounded-3">Click Here</a>
+                            <h3 style="position: relative; z-index: 1; font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: 500; color: white;">Ethscan Contract</h3>
+                            <a href="javascript:void(0)" style="position: relative; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 16px; padding: 12px 30px; color: #fff; background-color: #007bff; border-radius: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-transform: uppercase; padding: 12px 30px; font-size: 16px;">Click Here</a>
                         </div>
                     </div>
         
                     <!-- Botón 3 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="cta-button-wrapper text-center" style="position: relative;">
-                            <!-- Número detrás del título -->
-                            <div class="cta-number bg-primary text-white rounded-circle mb-3" 
-                                 style="width: 80px; height: 80px; font-size: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; display: flex; justify-content: center; align-items: center;">
-                                3
-                            </div>
+                    <div class="col-md-3 mb-4 text-center">
+                        <div style="position: relative; background-image: url('https://via.placeholder.com/400'); background-size: cover; background-position: center; height: 250px; border-radius: 10px;">
                             <!-- Título encima del número -->
-                            <h3 class="text-white" style="position: relative; z-index: 1; font-size: 18px;">DEX Tools Chart</h3>
-                            <a href="javascript:void(0)" class="btn btn-primary text-white py-2 px-4 rounded-3">Click Here</a>
+                            <h3 style="position: relative; z-index: 1; font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: 500; color: white;">DEX Tools Chart</h3>
+                            <a href="javascript:void(0)" style="position: relative; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 16px; padding: 12px 30px; color: #fff; background-color: #007bff; border-radius: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-transform: uppercase; padding: 12px 30px; font-size: 16px;">Click Here</a>
                         </div>
                     </div>
         
                     <!-- Botón 4 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="cta-button-wrapper text-center" style="position: relative;">
-                            <!-- Número detrás del título -->
-                            <div class="cta-number bg-primary text-white rounded-circle mb-3" 
-                                 style="width: 80px; height: 80px; font-size: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; display: flex; justify-content: center; align-items: center;">
-                                4
-                            </div>
+                    <div class="col-md-3 mb-4 text-center">
+                        <div style="position: relative; background-image: url('https://via.placeholder.com/400'); background-size: cover; background-position: center; height: 250px; border-radius: 10px;">
                             <!-- Título encima del número -->
-                            <h3 class="text-white" style="position: relative; z-index: 1; font-size: 18px;">Certik Audit Report</h3>
-                            <a href="javascript:void(0)" class="btn btn-primary text-white py-2 px-4 rounded-3">Coming Soon</a>
+                            <h3 style="position: relative; z-index: 1; font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: 500; color: white;">Certik Audit Report</h3>
+                            <a href="javascript:void(0)" style="position: relative; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 16px; padding: 12px 30px; color: #fff; background-color: #6c757d; border-radius: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-transform: uppercase; padding: 12px 30px; font-size: 16px;">Coming Soon</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        
+        
+
+<!-- Estilos Inline -->
+<style>
+    /* Fondo para la sección */
+    .cta-buttons-section {
+        background: linear-gradient(135deg, #141414, #222222);
+    }
+
+    /* Botón 3D con efecto hover */
+    .btn-primary {
+        position: relative;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 12px 30px;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        background-color: #66b3ff; /* Azul más claro */
+        cursor: pointer;
+    }
+
+    .btn-secondary {
+        position: relative;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 12px 30px;
+        color: #fff;
+        background-color: #6c757d;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+    }
+
+    .btn-secondary:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        background-color: #8a99a6;
+        cursor: pointer;
+    }
+
+    .cta-number {
+        width: 180px;
+        height: 180px;
+        font-size: 72px;
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #333;
+    }
+</style>
+
         
         
 
@@ -419,7 +509,7 @@
                         <a class="button iq-mt-20" href="javascript:void(0)" role="button">Shop Now</a>
                     </div>
                     <div class="col-lg-6 align-self-center mt-4 mt-lg-0">
-                        <img src="capitanimages/bannerscapdoge-06.png" class="img-fluid" alt="about_img">
+                        <img src="capitanimages/bannerscapdoge-05.png" class="img-fluid" alt="about_img">
                     </div>
                 </div>
             </div>
@@ -429,8 +519,13 @@
         <section class="features-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 align-self-center">
-                        <img src="capitanimages/bannerscapdoge-06.png" class="img-fluid" alt="Imagen relacionada con la misión">
+                    <div class="col-lg-6 align-self-center position-relative">
+                        <!-- Imagen de fondo con animación 3D -->
+                        <img src="capitanimages/capdoge-07.png" class="img-fluid rounded-50" alt="Imagen relacionada con la misión" 
+                             style="transition: transform 0.5s ease-in-out;">
+        
+                        <!-- Segunda imagen en la esquina inferior derecha con 40% de tamaño y borde redondeado -->
+
                     </div>
                     <div class="col-lg-6 align-self-center mt-5 mt-lg-0">
                         <!-- Contenedor con borde y redondeo -->
@@ -794,16 +889,12 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                             <div class="our-team">
                                 <div class="team-image">
-                                    <img alt="#" src="images/team/01.jpg" class="img-fluid">
-                                    <ul class="social">
-                                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0)" class="fa fa-linkedin"></a></li>
-                                    </ul>
+                                    <img alt="#" src="capitanimages/team1.png" class="img-fluid">
                                 </div>
                                 <div class="team-content">
-                                    <h5 class="title iq-tw-7">Nik Jorden</h5>
-                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">CEO & Lead CoinEX</small>
-                                    <p class="description">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h5 class="title iq-tw-7">MEDAL</h5>
+                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">Operations Director & Music Composer</small>
+                                
                                 </div>
                             </div>
                         </div>
@@ -811,16 +902,11 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                             <div class="our-team">
                                 <div class="team-image">
-                                    <img alt="#" src="images/team/02.jpg" class="img-fluid">
-                                    <ul class="social">
-                                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0)" class="fa fa-linkedin"></a></li>
-                                    </ul>
+                                    <img alt="#" src="capitanimages/team2.png" class="img-fluid">
                                 </div>
                                 <div class="team-content">
-                                    <h5 class="title iq-tw-7">JD Scot</h5>
-                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">CEO & Lead CoinEX</small>
-                                    <p class="description">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h5 class="title iq-tw-7">TELOS</h5>
+                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">Creative Director</small>
                                 </div>
                             </div>
                         </div>
@@ -828,16 +914,11 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                             <div class="our-team">
                                 <div class="team-image">
-                                    <img alt="#" src="images/team/03.jpg" class="img-fluid">
-                                    <ul class="social">
-                                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0)" class="fa fa-linkedin"></a></li>
-                                    </ul>
+                                    <img alt="#" src="capitanimages/team3.png" class="img-fluid">
                                 </div>
                                 <div class="team-content">
-                                    <h5 class="title iq-tw-7">Haris Morgan</h5>
-                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">CEO & Lead CoinEX</small>
-                                    <p class="description">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h5 class="title iq-tw-7">SEPHRON</h5>
+                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">Business Development & Writer</small>
                                 </div>
                             </div>
                         </div>
@@ -845,16 +926,11 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                             <div class="our-team">
                                 <div class="team-image">
-                                    <img alt="#" src="images/team/04.jpg" class="img-fluid">
-                                    <ul class="social">
-                                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0)" class="fa fa-linkedin"></a></li>
-                                    </ul>
+                                    <img alt="#" src="capitanimages/team4.png" class="img-fluid">
                                 </div>
                                 <div class="team-content">
-                                    <h5 class="title iq-tw-7">Kips Leo</h5>
-                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">CEO & Lead CoinEX</small>
-                                    <p class="description">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h5 class="title iq-tw-7">SATOSHI HOUSE</h5>
+                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">Community Lead</small>
                                 </div>
                             </div>
                         </div>
@@ -862,16 +938,11 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                             <div class="our-team">
                                 <div class="team-image">
-                                    <img alt="#" src="images/team/05.jpg" class="img-fluid">
-                                    <ul class="social">
-                                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0)" class="fa fa-linkedin"></a></li>
-                                    </ul>
+                                    <img alt="#" src="capitanimages/team5.png" class="img-fluid">
                                 </div>
                                 <div class="team-content">
-                                    <h5 class="title iq-tw-7">Anna Talia</h5>
-                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">CFO & Lead Strategy</small>
-                                    <p class="description">Anna brings over 15 years of strategic management experience in the crypto industry, focusing on financial planning and market expansion.</p>
+                                    <h5 class="title iq-tw-7">GZILLA</h5>
+                                    <small class="iq-mt-5 d-block iq-mb-10 iq-font-yellow">Designer</small>
                                 </div>
                             </div>
                         </div>
@@ -886,60 +957,22 @@
         
     <!-- Token Sale Proceeds END -->
    
-<div class="modal fade iq-login" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content blue-bg">
-            <div class="modal-header text-center">
-                <h4 class="modal-title ">Login</h4>
-                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="contact-form">
-                    <div class="section-field">
-                        <input class="require" id="contact_name" type="text" placeholder="Name*" name="name">
-                    </div>
-                    <div class="section-field">
-                        <input class="require" id="contact_email" type="email" placeholder="Email*" name="email">
-                    </div>
-                    <a class="button iq-mtb-10" href="javascript:void(0)">Sign In</a>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input">Remember Me</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 text-end">
-                            <a href="javascript:void(0)">Forgot Password</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer text-center">
-                <div> Don't Have an Account? <a href="javascript:void(0)" class="iq-font-yellow">Register Now</a></div>
-                <ul class="iq-media-blog iq-mt-20">
-                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
-                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
-                    <li><a href="# "><i class="fa fa-google "></i></a></li>
-                    <li><a href="# "><i class="fa fa-github "></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
     <!-- back-to-top -->
     <div id="back-to-top">
         <a class="top" id="top" href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i> </a>
     </div>
-
-    <footer style="background-color: #141414; padding: 20px 0; color: white;">
+    <footer style=" padding: 20px 0; color: white; position: relative; overflow: hidden; min-height: 300px;">
+        <!-- Imagen de fondo compartida con la sección anterior -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: inherit; opacity: 0.35; background-color: #141414; z-index: -1;"></div>
+    
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Logo -->
                 <div class="col-12 text-center mb-3">
                     <img src="capitanimages/bannerscapdoge-07.png" alt="Captain Doge Logo" class="img-fluid" style="max-height: 50px;">
                 </div>
-    
+            
                 <!-- Enlaces de condiciones -->
                 <div class="col-12 text-center mb-3">
                     <ul class="list-inline">
@@ -951,35 +984,39 @@
                         </li>
                     </ul>
                 </div>
-    
+            
                 <!-- Copyright -->
                 <div class="col-12 text-center mb-3">
-                    <p style="font-size: 12px;">© Copyright 2023 Metarift Studios LLC, all rights reserved</p>
+                    <p style="font-size: 12px;">© Copyright 2025 Metarift Studios LLC, all rights reserved</p>
                 </div>
-    
+            
                 <!-- Redes sociales -->
                 <div class="col-12 text-center">
                     <ul class="social list-inline">
                         <li class="list-inline-item">
-                            <a href="javascript:void(0)" class="fa fa-telegram" style="color: white; font-size: 24px;"></a>
+                            <a href="https://t.me/CaptainDoge_BSC" class="fa fa-telegram" style="color: white; font-size: 24px;" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="javascript:void(0)" class="fa fa-twitter" style="color: white; font-size: 24px;"></a>
+                            <a href="https://twitter.com/captaindoge_bsc" class="fa fa-twitter" style="color: white; font-size: 24px;" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="javascript:void(0)" class="fa fa-facebook" style="color: white; font-size: 24px;"></a>
+                            <a href="https://facebook.com" class="fa fa-facebook" style="color: white; font-size: 24px;" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="javascript:void(0)" class="fa fa-instagram" style="color: white; font-size: 24px;"></a>
+                            <a href="https://instagram.com" class="fa fa-instagram" style="color: white; font-size: 24px;" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="javascript:void(0)" class="fa fa-youtube" style="color: white; font-size: 24px;"></a>
+                            <a href="https://youtube.com" class="fa fa-youtube" style="color: white; font-size: 24px;" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
     </footer>
+    
+    
+    
     
     
     <!-- back-to-top End -->
